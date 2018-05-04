@@ -1,0 +1,1 @@
+[{"outputType":{"type":"MERGED_MANIFESTS"},"apkInfo":{"type":"MAIN","splits":[],"versionCode":44,"versionName":"2.8.0","enabled":true,"outputFile":"app-debug.apk","fullName":"debug","baseName":"debug"},"path":"AndroidManifest.xml","properties":{"packageId":"droid.cigcounter","split":"","minSdkVersion":"14"}}]
