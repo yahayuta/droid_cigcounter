@@ -1,0 +1,120 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="droid.cigcounter"
+4    android:versionCode="45"
+5    android:versionName="3.0.0" >
+6
+7    <uses-sdk
+7-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:3:5-44
+8        android:minSdkVersion="29"
+8-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:3:15-41
+9        android:targetSdkVersion="29" />
+9-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:3:5-44
+10
+11    <uses-permission android:name="android.permission.INTERNET" />
+11-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:33:5-66
+11-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:33:22-64
+12    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+12-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:34:2-75
+12-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:34:19-73
+13
+14    <application
+14-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:4:5-32:19
+15        android:extractNativeLibs="false"
+16        android:icon="@drawable/cigcounter"
+16-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:4:51-86
+17        android:label="@string/app_name" >
+17-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:4:18-50
+18        <meta-data
+18-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:5:5-117
+19            android:name="com.google.android.gms.version"
+19-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:5:16-61
+20            android:value="@integer/google_play_services_version" />
+20-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:5:62-115
+21
+22        <receiver
+22-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:7:9-12:20
+23            android:name="droid.cigcounter.CigCounterAppWidgetProvider"
+23-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:7:19-61
+24            android:label="@string/app_name" >
+24-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:7:62-94
+25            <intent-filter>
+25-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:8:13-10:29
+26                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+26-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:9:17-84
+26-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:9:25-81
+27            </intent-filter>
+28
+29            <meta-data
+29-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:11:13-106
+30                android:name="android.appwidget.provider"
+30-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:11:24-65
+31                android:resource="@layout/widgetprop" />
+31-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:11:66-103
+32        </receiver>
+33
+34        <service
+34-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:14:9-18:19
+35            android:name="droid.cigcounter.CigCounterService"
+35-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:14:18-50
+36            android:label="CigCounterService" >
+36-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:14:51-84
+37            <intent-filter>
+37-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:15:13-17:29
+38                <action android:name="droid.cigcounter.CigCounterService.ACTION_BTNCLICK" />
+38-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:16:17-93
+38-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:16:25-90
+39            </intent-filter>
+40        </service>
+41
+42        <provider
+42-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:20:9-21:20
+43            android:name="droid.cigcounter.CigCounterContentProvider"
+43-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:20:19-59
+44            android:authorities="droid.cigcounter.CigCounter" >
+44-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:20:60-109
+45        </provider>
+46
+47        <activity
+47-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:23:9-28:20
+48            android:name="droid.cigcounter.CigCounterActivity"
+48-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:23:19-52
+49            android:label="@string/app_analyzer" >
+49-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:23:53-89
+50            <intent-filter>
+50-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:24:13-27:29
+51                <action android:name="android.intent.action.MAIN" />
+51-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:25:17-69
+51-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:25:25-66
+52
+53                <category android:name="android.intent.category.LAUNCHER" />
+53-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:26:17-77
+53-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:26:27-74
+54            </intent-filter>
+55        </activity>
+56        <activity
+56-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:30:9-183
+57            android:name="com.google.android.gms.ads.AdActivity"
+57-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:30:19-71
+58            android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"
+58-->D:\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:30:72-181
+59            android:exported="false"
+59-->[com.google.android.gms:play-services-ads-lite:15.0.0] C:\Users\yahayuta\.gradle\caches\transforms-2\files-2.1\c4cd7ffa27a05213d358a6c1d31c7cb1\play-services-ads-lite-15.0.0\AndroidManifest.xml:32:13-37
+60            android:theme="@android:style/Theme.Translucent" />
+60-->[com.google.android.gms:play-services-ads-lite:15.0.0] C:\Users\yahayuta\.gradle\caches\transforms-2\files-2.1\c4cd7ffa27a05213d358a6c1d31c7cb1\play-services-ads-lite-15.0.0\AndroidManifest.xml:33:13-61
+61
+62        <meta-data
+62-->[com.android.support:customtabs:26.1.0] C:\Users\yahayuta\.gradle\caches\transforms-2\files-2.1\96cfcba76047fe66d18a2633a36d3f90\customtabs-26.1.0\AndroidManifest.xml:23:9-25:38
+63            android:name="android.support.VERSION"
+63-->[com.android.support:customtabs:26.1.0] C:\Users\yahayuta\.gradle\caches\transforms-2\files-2.1\96cfcba76047fe66d18a2633a36d3f90\customtabs-26.1.0\AndroidManifest.xml:24:13-51
+64            android:value="26.1.0" />
+64-->[com.android.support:customtabs:26.1.0] C:\Users\yahayuta\.gradle\caches\transforms-2\files-2.1\96cfcba76047fe66d18a2633a36d3f90\customtabs-26.1.0\AndroidManifest.xml:25:13-35
+65        <meta-data
+65-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\yahayuta\.gradle\caches\transforms-2\files-2.1\fc77544894966c2a96f4b9c4d7143aae\runtime-1.0.0\AndroidManifest.xml:25:9-27:47
+66            android:name="android.arch.lifecycle.VERSION"
+66-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\yahayuta\.gradle\caches\transforms-2\files-2.1\fc77544894966c2a96f4b9c4d7143aae\runtime-1.0.0\AndroidManifest.xml:26:13-58
+67            android:value="27.0.0-SNAPSHOT" />
+67-->[android.arch.lifecycle:runtime:1.0.0] C:\Users\yahayuta\.gradle\caches\transforms-2\files-2.1\fc77544894966c2a96f4b9c4d7143aae\runtime-1.0.0\AndroidManifest.xml:27:13-44
+68    </application>
+69
+70</manifest>
