@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<project version="4">
-  <component name="ProjectModuleManager">
-    <modules>
-      <module fileurl="file://$PROJECT_DIR$/droid_cigcounter.iml" filepath="$PROJECT_DIR$/droid_cigcounter.iml" />
-      <module fileurl="file://$PROJECT_DIR$/.idea/modules/app/droid_cigcounter.app.iml" filepath="$PROJECT_DIR$/.idea/modules/app/droid_cigcounter.app.iml" />
-    </modules>
-  </component>
-</project>
