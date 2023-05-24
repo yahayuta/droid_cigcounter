@@ -1,17 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
-<manifest xmlns:android="http://schemas.android.com/apk/res/android" package="droid.cigcounter" android:versionCode="45" android:versionName="3.0.0">
+<manifest xmlns:android="http://schemas.android.com/apk/res/android" android:versionCode="45" android:versionName="3.0.0">
     <uses-sdk android:minSdkVersion="29" />
     <application android:label="@string/app_name" android:icon="@drawable/cigcounter">
-    <meta-data android:name="com.google.android.gms.version" android:value="@integer/google_play_services_version"/>
-        
-        <receiver android:name="CigCounterAppWidgetProvider" android:label="@string/app_name">
+
+        <receiver android:name="CigCounterAppWidgetProvider" android:exported="true" android:label="@string/app_name">
             <intent-filter>
                 <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
             </intent-filter>
             <meta-data android:name="android.appwidget.provider" android:resource="@layout/widgetprop" />
         </receiver>
 
-        <service android:name="CigCounterService" android:label="CigCounterService">
+        <service android:name="CigCounterService" android:exported="true" android:label="CigCounterService">
             <intent-filter>
                 <action android:name="droid.cigcounter.CigCounterService.ACTION_BTNCLICK" />
             </intent-filter>
@@ -20,15 +19,13 @@
         <provider android:name="CigCounterContentProvider" android:authorities="droid.cigcounter.CigCounter">
         </provider>
         
-        <activity android:name="CigCounterActivity" android:label="@string/app_analyzer">
+        <activity android:name="CigCounterActivity" android:exported="true" android:label="@string/app_analyzer">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        
-        <activity android:name="com.google.android.gms.ads.AdActivity" android:configChanges="keyboard|keyboardHidden|orientation|screenLayout|uiMode|screenSize|smallestScreenSize"/>
-        
+
     </application>
     <uses-permission android:name="android.permission.INTERNET"/>
 	<uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>

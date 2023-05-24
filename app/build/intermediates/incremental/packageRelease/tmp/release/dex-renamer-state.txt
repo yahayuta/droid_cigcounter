@@ -1,4 +1,0 @@
-#Fri Feb 12 19:01:30 JST 2021
-base.0=D\:\\develop\\droid_cigcounter\\app\\build\\intermediates\\dex\\release\\mergeDexRelease\\classes.dex
-path.0=classes.dex
-renamed.0=classes.dex

@@ -1,15 +1,5 @@
 package droid.cigcounter;
 
-import java.text.DateFormat;
-import java.text.SimpleDateFormat;
-import java.util.ArrayList;
-import java.util.Calendar;
-import java.util.Date;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.List;
-import java.util.Map;
-
 import android.annotation.SuppressLint;
 import android.app.Activity;
 import android.app.AlertDialog;
@@ -30,9 +20,15 @@ import android.widget.ListView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.google.android.gms.ads.AdRequest;
-import com.google.android.gms.ads.AdSize;
-import com.google.android.gms.ads.AdView;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.ArrayList;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.HashMap;
+import java.util.Iterator;
+import java.util.List;
+import java.util.Map;
 
 /**
  * たばこカウンター集計画面
@@ -225,9 +221,7 @@ public class CigCounterActivity extends Activity {
         
         LinearLayout layout = (LinearLayout)findViewById(R.id.linearLayout1);
         layout.removeAllViews();
-        
-        addAdView(layout);
-        
+
         layout.addView(lv);
 	}
 
@@ -274,9 +268,7 @@ public class CigCounterActivity extends Activity {
         
         LinearLayout layout = (LinearLayout)findViewById(R.id.linearLayout1);
         layout.removeAllViews();
-        
-        addAdView(layout);
-        
+
         layout.addView(lv);
 	}
 	
@@ -332,22 +324,8 @@ public class CigCounterActivity extends Activity {
         
         LinearLayout layout = (LinearLayout)findViewById(R.id.linearLayout1);
         layout.removeAllViews();
-        
-        addAdView(layout);
-        
+
         layout.addView(lv);
-	}
-	
-	/**
-	 * adMobビューを追加する
-	 * @param layout
-	 */
-	private void addAdView(LinearLayout layout) {
-        AdView adView = new AdView(this);
-        adView.setAdUnitId("ca-app-pub-4280826531916194/2510568307");
-        adView.setAdSize(AdSize.SMART_BANNER);
-        layout.addView(adView);
-		adView.loadAd(new AdRequest.Builder().build());
 	}
 	
 	@Override
@@ -515,9 +493,7 @@ public class CigCounterActivity extends Activity {
 	private void loadChart() {
         LinearLayout layout = (LinearLayout)findViewById(R.id.linearLayout1);
         layout.removeAllViews();
-        
-        addAdView(layout);
-        
+
         // ビューの作成
         CigCounterChartView cView = new CigCounterChartView(this);
         // ログビリスト取得
