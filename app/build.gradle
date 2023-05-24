@@ -28,6 +28,3 @@ android {
     }
 }
 
-dependencies {
-    implementation files('libs/afreechart-0.0.3.jar')
-}

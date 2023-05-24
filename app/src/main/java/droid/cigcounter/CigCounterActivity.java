@@ -352,10 +352,6 @@ public class CigCounterActivity extends Activity {
 		MenuItem actionItem3 = menu.add(0, MENU_ITEM3, 0, getString(R.string.menu_logs));
 		actionItem3.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
 		
-		// 喫煙ロググラフ
-		MenuItem actionItem4 = menu.add(0, MENU_ITEM4, 0, getString(R.string.menu_logs_chart));
-		actionItem4.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
-		
 		// 喫煙ログ保存メニュー追加
 		MenuItem actionItem5 = menu.add(0, MENU_ITEM5, 0, getString(R.string.menu_trans));
 		actionItem5.setShowAsAction(MenuItem.SHOW_AS_ACTION_IF_ROOM);
@@ -420,9 +416,6 @@ public class CigCounterActivity extends Activity {
 			case MENU_ITEM3: // 喫煙ログリストビュー作成
 				makeSmokeLogListView();
 				return true;
-			case MENU_ITEM4: // 喫煙ロググラフ
-				loadChart();
-				return true;
 			case MENU_ITEM5: // 喫煙ログ保存メニュー作成
 				saveSmokeLog();
 				return true;
@@ -485,25 +478,6 @@ public class CigCounterActivity extends Activity {
 		
 		intent.putExtra(Intent.EXTRA_TEXT, text);  
 		startActivity(Intent.createChooser(intent, getString(R.string.menu_msg_save_log)));
-	}
-	
-	/**
-	 * 喫煙ロググラフ作成
-	 */
-	private void loadChart() {
-        LinearLayout layout = (LinearLayout)findViewById(R.id.linearLayout1);
-        layout.removeAllViews();
-
-        // ビューの作成
-        CigCounterChartView cView = new CigCounterChartView(this);
-        // ログビリスト取得
-        cView.setLogList(getSmokeHistoryList());
-        cView.setChart_name(getString(R.string.chart_name));
-        cView.setChart_x_label(getString(R.string.chart_x_label));
-        cView.setChart_y_label(getString(R.string.chart_y_label));
-        cView.setChart_plot(getString(R.string.chart_plot));
-            
-        layout.addView(cView);
 	}
 	
 	/**
