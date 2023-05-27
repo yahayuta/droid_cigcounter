@@ -1,15 +1,15 @@
 -- Merging decision tree log ---
 manifest
-ADDED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:2:1-32:12
-INJECTED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:2:1-32:12
+ADDED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:2:1-31:12
+INJECTED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:2:1-31:12
 	package
 		INJECTED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml
-		ADDED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:2:1-32:12
+		ADDED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:2:1-31:12
 		INJECTED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml
 	android:versionName
 		ADDED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:2:95-122
@@ -99,11 +99,3 @@ category#android.intent.category.LAUNCHER
 ADDED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:25:17-77
 	android:name
 		ADDED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:25:27-74
-uses-permission#android.permission.INTERNET
-ADDED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:30:5-66
-	android:name
-		ADDED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:30:22-64
-uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:31:2-75
-	android:name
-		ADDED from C:\Users\yasun\develop\droid_cigcounter\app\src\main\AndroidManifest.xml:31:19-73
