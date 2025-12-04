@@ -29,6 +29,42 @@ A cross-platform Flutter application for tracking cigarette consumption with det
 - **Settings**: Customizable cost per cigarette
 - **Reset Functionality**: Clear all data when needed
 
+## 📖 How to Use
+
+### 1. App Overview
+The Tobacco Counter app helps you track your daily cigarette consumption. It provides an immediate count for the current day, estimated costs, and an associated health risk factor. You can also view historical data, analytics, and manage settings.
+
+### 2. Home Screen
+*   **Access:** This is the main screen you see when you open the app.
+*   **Core Functionality (Count Up):** To record a cigarette, simply **tap the large circular number in the center of the screen.** The count will increase by one, and the estimated cost and health risk will update immediately.
+*   **Information Displayed:**
+    *   **Today's Count:** Shows the total number of cigarettes you have recorded for the current day.
+    *   **Today's Cost:** Displays the estimated financial cost incurred from today's smoking, based on your recorded cigarettes and the "Cost Per Cigarette" set in settings.
+    *   **Cancer Risk:** Provides an estimated cancer risk factor based on your daily consumption.
+*   **Navigation:** The App Bar at the top of the screen provides quick access to other sections of the app:
+    *   **Analytics:** (Graph Icon) - For detailed statistics and trends.
+    *   **History:** (Clock Icon) - To view a log of all recorded cigarettes.
+    *   **Health:** (Heart Icon) - For more specific health-related information.
+    *   **Settings:** (Gear Icon) - To customize app parameters.
+
+### 3. Analytics Screen
+*   **Access:** Tap the **graph icon** in the Home Screen's App Bar.
+*   **Purpose:** This screen offers various charts and graphs to visualize your smoking patterns over time, helping you understand your habits better.
+
+### 4. History Screen
+*   **Access:** Tap the **clock icon** in the Home Screen's App Bar.
+*   **Purpose:** Here, you will find a chronological list of every cigarette you have recorded, complete with timestamps. This allows you to review your past consumption.
+
+### 5. Health Screen
+*   **Access:** Tap the **heart icon** in the Home Screen's App Bar.
+*   **Purpose:** This section is designed to provide you with more in-depth information about the health impacts of smoking and potentially tips for reduction.
+
+### 6. Settings Screen
+*   **Access:** Tap the **gear icon** in the Home Screen's App Bar.
+*   **Purpose:** This screen allows you to personalize the app's behavior.
+    *   **Cost Per Cigarette:** You can adjust this value to accurately reflect the actual cost of your cigarettes. This setting directly influences the "Today's Cost" calculation on the Home Screen.
+    *   **Reset All Data:** There is an option here to clear all your recorded cigarette data, effectively starting fresh. Use with caution as this action is usually irreversible.
+
 ## 🚀 Getting Started
 
 ### Prerequisites
