@@ -1,8 +1,8 @@
 # Tobacco Counter (Cigarette Counter)
 
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-[![Android](https://img.shields.io/badge/Android-API%2029+-green.svg)](https://developer.android.com/about/versions/android-10)
-[![Gradle](https://img.shields.io/badge/Gradle-8.9-blue.svg)](https://gradle.org/)
+[![Android](https://img.shields.io/badge/Android-API%2035-green.svg)](https://developer.android.com/about/versions/15)
+[![Gradle](https://img.shields.io/badge/Gradle-8.11.1-blue.svg)](https://gradle.org/)
 
 A comprehensive Android application for tracking cigarette consumption with detailed analytics, health insights, and a home screen widget. This app helps users monitor their smoking habits, calculate costs, and understand the health implications of their smoking behavior.
 
@@ -35,8 +35,10 @@ A comprehensive Android application for tracking cigarette consumption with deta
 
 ### Prerequisites
 - Android API level 29 (Android 10) or higher
+- Target SDK: Android API level 35 (Android 15)
 - Android Studio (for development)
-- Gradle 8.9
+- Gradle 8.11.1
+- JDK 21
 
 ### Installation
 
@@ -192,7 +194,15 @@ If you encounter any issues or have questions:
 
 ## 🔄 Version History
 
-- **v3.1.0** (Current)
+- **v3.2.0** (Current)
+  - Updated to Android SDK 35 (Android 15)
+  - Updated Android Gradle Plugin to 8.7.3
+  - Updated Gradle to 8.11.1
+  - Migrated to Java 21
+  - Replaced deprecated jcenter() with mavenCentral()
+  - Modernized build configurations
+
+- **v3.1.0**
   - Enhanced analytics and statistics
   - Improved widget functionality
   - Better health risk assessments

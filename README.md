@@ -220,6 +220,14 @@ This Flutter version is a complete rewrite of the original native Android applic
 - Enhanced chart visualization with fl_chart
 - Maintained all original features and calculations
 
+### Android Native Version
+
+The original Android native app in `android_native/` has been updated to the latest Android development tools:
+- **Android SDK**: 35 (Android 15)
+- **Android Gradle Plugin**: 8.7.3
+- **Gradle**: 8.11.1
+- **Java**: VERSION_21
+
 For the original Android documentation, see [android_native/README.md](android_native/README.md).
 
 ## 📞 Support

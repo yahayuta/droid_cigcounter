@@ -1,18 +1,19 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 33
-    buildToolsVersion "30.0.3"
+    compileSdkVersion 35
+    buildToolsVersion "35.0.0"
     namespace 'droid.cigcounter'
 
     defaultConfig {
         applicationId "droid.cigcounter"
         minSdkVersion 29
-        targetSdkVersion 33
-        compileOptions {
-            sourceCompatibility JavaVersion.VERSION_19
-            targetCompatibility JavaVersion.VERSION_19
-        }
+        targetSdkVersion 35
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_21
+        targetCompatibility JavaVersion.VERSION_21
     }
 
     buildTypes {
@@ -22,7 +23,7 @@ android {
         }
     }
 
-    lintOptions {
+    lint {
         disable 'InvalidPackage'
         checkReleaseBuilds false
     }
